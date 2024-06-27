@@ -6,7 +6,6 @@ export const intervir: RequestHandler = (req, res, next) => {
     if(isLogged) {
         console.log('Ok')
         next()
-        return
     } else {
         console.log('erro.')
         return
